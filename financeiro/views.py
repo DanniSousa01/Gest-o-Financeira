@@ -10,5 +10,5 @@ def usuario_list(request):
     return render (request, 'usuarios/list.html', {'usuarios': usuarios})
 
 def usuario_show(request, usuario_id):
-    usuario = Usuario.objects.get(pk=cliente_id)
+    usuario = Usuario.objects.get(pk=usuario_id)
     return render(request, 'usuarios/show.html', {'usuario': usuario})
