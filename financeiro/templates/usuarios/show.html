@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block daniela %}
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">
+            <i class="fa fa-laptop"></i>Detalhes do Usuário</h3>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/financeiro/">Home</a>
+            </li>
+            <li>
+                <i class="fa fa-laptop"></i>Usuário</li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 ">
+        <div>
+            <label>Nome: </label>
+            {{usuario.nome}}
+        </div>
+        <div>
+            <label>Data Nascimento: </label>
+            {{usuario.dt_nasc | date:"d/m/Y"}}
+        </div>
+        <div>
+            <label>CPF: </label>
+            {{usuario.cpf}}
+        </div>
+        <div>
+            <label>Sexo: </label>
+            {{usuario.sexo}}
+        </div>
+    </div>
+</div>
+{% endblock %}
