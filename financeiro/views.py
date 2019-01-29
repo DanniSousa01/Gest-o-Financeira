@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from . models import Usuario
+from . models import Usuario, Despesas
 # Create your views here.
 
 def home(request):
@@ -12,3 +12,11 @@ def usuario_list(request):
 def usuario_show(request, usuario_id):
     usuario = Usuario.objects.get(pk=usuario_id)
     return render(request, 'usuarios/show.html', {'usuario': usuario})
+
+def despesa_list (request):
+    despesas = Despesas.objects.all()
+    return render(request, 'despesas/list.html', {'despesas': despesas}) 
+
+def despesa_show(request, despesa_id):
+    despesa = Despesas.objects.get(pk=despesa_id)
+    return render(request, 'despesas/show.html', {'despesa': despesa})
