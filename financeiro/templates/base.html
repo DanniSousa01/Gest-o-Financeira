@@ -69,7 +69,8 @@
                                                 <em>Yesterday</em>
                                             </span>
                                         </div>
-                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                            eleifend...
                                         </div>
                                     </a>
                                 </li>
@@ -82,7 +83,8 @@
                                                 <em>Yesterday</em>
                                             </span>
                                         </div>
-                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                            eleifend...
                                         </div>
                                     </a>
                                 </li>
@@ -95,7 +97,8 @@
                                                 <em>Yesterday</em>
                                             </span>
                                         </div>
-                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                            eleifend...
                                         </div>
                                     </a>
                                 </li>
@@ -124,8 +127,8 @@
                                                 <span class="pull-right text-muted">40% Complete</span>
                                             </p>
                                             <div class="progress progress-striped active">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 40%">
+                                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                                     <span class="sr-only">40% Complete (success)</span>
                                                 </div>
                                             </div>
@@ -141,7 +144,8 @@
                                                 <span class="pull-right text-muted">20% Complete</span>
                                             </p>
                                             <div class="progress progress-striped active">
-                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                                     <span class="sr-only">20% Complete</span>
                                                 </div>
                                             </div>
@@ -157,8 +161,8 @@
                                                 <span class="pull-right text-muted">60% Complete</span>
                                             </p>
                                             <div class="progress progress-striped active">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 60%">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar"
+                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                                     <span class="sr-only">60% Complete (warning)</span>
                                                 </div>
                                             </div>
@@ -174,8 +178,8 @@
                                                 <span class="pull-right text-muted">80% Complete</span>
                                             </p>
                                             <div class="progress progress-striped active">
-                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 80%">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                                     <span class="sr-only">80% Complete (danger)</span>
                                                 </div>
                                             </div>
@@ -295,12 +299,28 @@
                                         <i class="fa fa-dashboard fa-fw"></i> Home </a>
                                 </li>
                                 <li>
-                                    <a href="/financeiro/usuarios/">
-                                        <i class="fa fa-user"></i> Usuários</a>
+                                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Usuários <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="/financeiro/usuarios/form/"> Cadastrar Usuário</a>
+                                        </li>
+                                        <li>
+                                            <a href="/financeiro/usuarios/"> Usuários </a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-second-level -->
                                 </li>
                                 <li>
-                                    <a href="/financeiro/despesas/">
-                                        <i class="fa fa-shopping-cart"></i> Compras</a>
+                                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Despesas <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="/financeiro/despesas/form/"> Cadastrar Despesas</a>
+                                        </li>
+                                        <li>
+                                            <a href="/financeiro/despesas/"> Despesas </a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-second-level -->
                                 </li>
                             </ul>
                         </div>
@@ -317,21 +337,21 @@
                 </div>
 
                 <!-- jQuery -->
-                <script src="../vendor/jquery/jquery.min.js"></script>
+                <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
 
                 <!-- Bootstrap Core JavaScript -->
-                <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+                <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js'%}"></script>
 
                 <!-- Metis Menu Plugin JavaScript -->
-                <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+                <script src="{% static 'vendor/metisMenu/metisMenu.min.js'%}"></script>
 
                 <!-- Morris Charts JavaScript -->
-                <script src="../vendor/raphael/raphael.min.js"></script>
-                <script src="../vendor/morrisjs/morris.min.js"></script>
-                <script src="../data/morris-data.js"></script>
+                <script src="{% static 'vendor/raphael/raphael.min.js'%}"></script>
+                <script src="{% static 'vendor/morrisjs/morris.min.js'%}"></script>
+                <script src="{% static 'data/morris-data.js'%}"></script>
 
                 <!-- Custom Theme JavaScript -->
-                <script src="../dist/js/sb-admin-2.js"></script>
+                <script src="{% static 'dist/js/sb-admin-2.js'%}"></script>
 
 </body>
 

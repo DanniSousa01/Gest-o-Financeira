@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block daniela %}
+<div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">
+                <i class="fa fa-laptop"></i> Cadastro de Usuário </h3>
+            <ol class="breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="/financeiro/">Home</a>
+                </li>
+                <li>
+                    <i class="fa fa-laptop"></i> Cadastro </li>
+            </ol>
+        </div>
+    </div>
+<div class="col-lg-6">
+    <section class="panel">
+        <div class="panel-body">
+            <form action="/financeiro/usuarios/form/" method="POST">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label for="{{form.nome.id_for_label}}">{{form.nome.label}}
+                    </label>
+                    {{form.nome}}
+                </div>
+                <div class="form-group">
+                    <label for="{{form.cpf.id_for_label}}">{{form.cpf.label}}</label>
+                    {{form.cpf}}
+                </div>
+                <div class="form-group">
+                    <label for="{{form.data_nasc.id_for_label}}"> {{form.data_nasc.label}} </label>
+                    {{form.data_nasc}}
+                </div>
+                <div class="form-group">
+                    <label for="{{form.tel.id_for_label}}"> {{form.tel.label}} </label>
+                    {{form.tel}}
+                </div>
+
+                <div class="form-group">
+                    <label for="{{form.sexo.id_for_label}}"> {{form.sexo.label}} </label>
+                    {{form.sexo}}
+                </div>
+                <button type="submit" class="btn btn-primary"> Enviar </button>
+            </form>
+
+        </div>
+    </section>
+</div>
+{% endblock %}
